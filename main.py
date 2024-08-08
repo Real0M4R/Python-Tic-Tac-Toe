@@ -124,7 +124,7 @@ class Game:
         for combo in win_combinations:
             if (self.board.board[combo[0]] == self.board.board[combo[1]] ==
                     self.board.board[combo[2]]):
-                print(f"{self.players[self.current_player_index].name} wins!")
+                print(f"{self.players[self.current_player_index - 1].name} wins!")
                 return True
         return False
 
